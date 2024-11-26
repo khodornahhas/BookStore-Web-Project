@@ -35,10 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
  
           }
     });
-    clearButton.addEventListener("click", function () {
-        localStorage.removeItem("contactFormData");
-        dataDisplay.innerHTML = "";
-    });
     function displayData(data) {
         dataDisplay.innerHTML = ""; 
 
@@ -55,4 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
             dataDisplay.appendChild(entryDiv);
         });
     }
+    clearButton.addEventListener("click", function () {
+        localStorage.removeItem("contactFormData");
+        dataDisplay.innerHTML = "";
+    });
 });
