@@ -4,58 +4,71 @@
     box-sizing: border-box;
     font-family: "Roboto Flex", sans-serif;
 }
+
 header img{
     height:120px;
     width:130px;
 }
+
 header {
     background-color: #4E3B31; 
     color: #FFF; 
     max-width: 100%;
     padding: 5px;
 }
+
 #bookly-H1{
     padding:5px;
 }
+
 body {
     background-color: #F5F5DC; 
     color: #000000; 
     height:auto;
     max-width: 100%;
 }
+
 .header {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     padding: 5px; 
 }
+
 .header img {
     margin-right: 10px; 
 }
+
 nav {
     margin-left: auto; 
 }
+
 nav ul {
     display: flex; 
     list-style-type: none; 
 }
+
 nav li {
     margin:5px;
 }
+
 nav a {
     text-decoration: none; 
     color: #FFF; 
     font-size: larger;
     transition: color 0.3s ease,font-size 0.3s ease;
 }
+
 nav a:hover {
     color:#f5f5dc72;
     font-size:20px;
 }
+
 h1{
     padding-top:50px;
     text-align:center;
 }
+
 .FatherContainer {
     display: flex; 
     justify-content: space-between; 
@@ -63,6 +76,7 @@ h1{
     gap: 30px; 
     padding: 20px;
 }
+
 .formDiv {
     flex:1; 
     display: flex;
@@ -71,9 +85,11 @@ h1{
     text-align:center;
     gap: 20px;
 }
+
 form div {
     margin-bottom: 10px;
 }
+
 form input, form textarea {
     width: 40%; 
     padding: 10px;
@@ -81,6 +97,7 @@ form input, form textarea {
     font-weight: bold;
     border-radius:5px;
 }
+
 .submit button {
     padding: 10px;
     width: 10%;
@@ -89,9 +106,11 @@ form input, form textarea {
     background-color:#F5F5DC;
     transition: background-color 0.3s ease
 }
+
 .submit button:hover{
     background-color: #EEE1C6;
 }
+
 .contact {
     flex: 0.5;
     display: flex;
@@ -102,15 +121,18 @@ form input, form textarea {
     height: 30vh;
     border-left: 2px solid black; 
 }
+
 .contact-item {
     display: flex;
     align-items: center;
     padding-top: 10px;
 }
+
 .logo {
     width: 5%; 
     margin-right: 5px; 
 }
+
 .FindUs-Container {
     display: flex;
     flex-direction: row;
@@ -127,6 +149,7 @@ form input, form textarea {
     margin-top:100px;
     border-radius: 10px;
 }
+
 .FindUsBox{
     display: flex;
     justify-content: flex-start;
@@ -134,9 +157,11 @@ form input, form textarea {
     width:45%;
     padding-left: 100px;
 }
+
 .FindUsBox h2{
     padding-bottom:20px;
 }
+
 .FindUsBox button{
     padding: 10px;
     margin-top:25px;
@@ -146,12 +171,15 @@ form input, form textarea {
     background-color:#EEE1C6;
     transition: background-color 0.3s ease
 }
+
 .FindUsBox button:hover{
     background-color:#F5F5DC;
 }
+
 .map{
     padding-right:50px;
 }
+
 .cardContainer{
     display: flex;
     flex-direction: row;
@@ -161,6 +189,7 @@ form input, form textarea {
     flex-shrink: 2;
     margin:150px;
 }
+
 .cardContent{
     width: 22%;
     height: 40vh;
@@ -174,20 +203,22 @@ form input, form textarea {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     text-align: center;
 }
+
 .cardContent img{
     width:25%;
     margin-left:85px;
     padding-top:40px;
 }
+
 .cardContent h2{
   margin-bottom:30px;
 }
+
 .cardContent:hover{
     background-color:#F5F5DC;
     cursor: pointer;
     transition: background-color 0.8s ease
 }
-
 
 footer{
     background-color: #F1E9D2;
@@ -197,6 +228,7 @@ footer p{
     color: #7D6A54;
     font-size: larger;
 }
+
 .footer-row {
     display: flex;
     gap:300px;
@@ -206,13 +238,16 @@ footer p{
     margin-top: 100px;
     margin-right: 60px;
 }
+
 .list ul, .list2 ul, .list3 ul {
     list-style-type: none; 
 }
+
 .list, .list2, .list3 {
     margin-top: 60px;
     font-size: large;
 }
+
 .list a, .list2 a, .list3 a {
     text-decoration: none;
     color: black;
@@ -232,6 +267,28 @@ footer p{
     font-size: xx-large;
     text-align: center;
 }
+
+.scrollUp{
+    display: flex;
+    justify-content:end;
+    padding-right:50px;
+    position: fixed;
+    bottom:40px;
+    right:0px;
+}
+
+.scrollUp button {
+    padding: 5px 10px; 
+    font-size: 25px;
+    background-color: #F5F5DC;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.scrollUp button:hover{
+    background-color: #f8e5d0;
+}
+
 .footer-column {
     display: flex;
     flex-direction: column;
@@ -240,6 +297,7 @@ footer p{
     gap: 15px;
     align-items: center; 
 }
+
 .footerimgs {
     display: flex;        
     justify-content: center; 
@@ -247,17 +305,32 @@ footer p{
     gap: 20px; 
     width: 100%; 
 }
+
 .footerimgs img {
     width: 80px;  
     height: auto;
 }
+
 #facebook{
     width:70px;
 }
+
 #YT{
     width:80px;
     height:55px;
 }
+.form-data-display {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .form-data-display .entry {
+    margin-bottom: 10px;
+  }
+  .form-data-display .entry p {
+    margin: 5px 0;
+  }
+
 @media (max-width: 1200px) {
     .header {
         flex-direction: column; 
@@ -357,14 +430,4 @@ footer p{
     #insta{
         width:77px;
     }}
-    .form-data-display {
-        margin-top: 20px;
-        padding: 10px;
-        border-top: 1px solid #ddd;
-      }
-      .form-data-display .entry {
-        margin-bottom: 10px;
-      }
-      .form-data-display .entry p {
-        margin: 5px 0;
-      }
+   

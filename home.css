@@ -89,23 +89,28 @@ nav a:hover {
     font-size:x-large;
     color: #6A2C2A;
 }
-.content button{
-    margin-top:50px;
-    padding:10px;
-    width:50%;
+.content .button-link {
+    display: inline-block; 
+    text-align: center;    
+    margin-top: 50px;
+    padding: 10px;
+    width: 50%;
     cursor: pointer;
-    border-radius:5px;
-    background-color: #4E3B31; 
-    color: #F5F5DC; 
-    border: none; 
-    font-size: 16px; 
+    border-radius: 5px;
+    background-color: #4E3B31;
+    color: #F5F5DC;
+    border: none;
+    font-size: 16px;
+    text-decoration: none; 
     transition: background-color 0.3s ease, padding 0.3s ease, width 0.3s ease;
-    }
-.content button:hover {
-    background-color: #7D6A54; 
-    padding:15px;
-    width:55%;
 }
+
+.content .button-link:hover {
+    background-color: #7D6A54;
+    padding: 15px;
+    width: 55%;
+}
+
 .firstCard, .secondCard, .thirdCard {
     display: flex;
     flex-direction: column;
@@ -137,15 +142,6 @@ nav a:hover {
 .thirdCard img {
     height: 45%; 
 }
-.firstCard button {
-    margin-top: 38px; 
-}
-.secondCard button {
-    margin-top: 27px; 
-}
-.thirdCard button{
-    margin-top:27px;
-}
 .firstCard p, .secondCard p, .thirdCard p {
     margin-top: 8px;
 }
@@ -157,20 +153,30 @@ nav a:hover {
     overflow: hidden;
     margin-top:100px;
 }
-.cardButton{
-    margin-top:25px;
-    width:100%;
-    padding:5px;
-    border-radius: 10px;
-    background-color: #4E3B31; 
-    color: #F5F5DC; 
-    border: none; 
-    font-size: 16px; 
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer; 
+.cardButton-link {
+    text-decoration: none; 
+    display: inline-block; 
+    width: 100%;
 }
+#firstcard{
+    margin-top:11px;
+}
+.cardButton {
+    margin-top: 25px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4E3B31;
+    color: #F5F5DC;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-align: center; 
+}
+
 .cardButton:hover {
-    background-color: #b0997e; 
+    background-color: #b0997e;
 }
 .CardContainer h2{
     color:#8b7863;
@@ -184,6 +190,7 @@ nav a:hover {
     width:70%;
     padding-right:90px;
 }    
+
 .childContainer h2{
     font-size:30px;
     color: #6A2C2A;
@@ -193,21 +200,25 @@ nav a:hover {
     font-weight: bold;
     padding-top:20px;
 }
-.childContainer button{
-    padding:10px;
-    width:50%;
+
+ .button-link2 {
+    display: inline-block;
+    padding: 10px;
+    width: 70%;
+    text-align: center;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #F5F5DC; 
     border: none; 
     background-color: #4E3B31;
     font-size: 16px; 
-    margin-top:25px;
-    transition: background-color 0.3s ease, transform 0.2s ease,width 0.3s ease;
+    margin-top: 25px;
+    text-decoration: none; 
+    transition: background-color 0.3s ease, transform 0.2s ease, width 0.3s ease;
 }
-.childContainer button:hover{
+
+.button-link2:hover {
     background-color: #9f794e;
-   
 }
 
 .fatherContainer {
@@ -374,18 +385,24 @@ nav a:hover {
     justify-content: center;
     padding-top:100px;
 }
-.viewMore button{
-    padding:15px;   
-    width:30%;
-    font-size:15px;
-    background-color: #F5F5DC; 
+.viewMore .viewMore-link {
+    display: inline-block; 
+    padding: 15px;
+    width: 30%;
+    font-size: 16px;
     font-weight: bold;
-    font-size: 16px; 
+    background-color: #F5F5DC;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius:0px;
+    cursor: pointer;
+    border: 2px solid black; 
     transition: background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer; 
 }
-.viewMore button:hover{
-    background-color:#f8ebc5; 
+
+.viewMore .viewMore-link:hover {
+    background-color: #f8ebc5;
 }
 .scrollUp{
     display: flex;
