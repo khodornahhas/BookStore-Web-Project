@@ -89,25 +89,23 @@ nav a:hover {
     font-size:x-large;
     color: #6A2C2A;
 }
-.content .button-link {
-    display: inline-block; 
+.content .button-link { 
     text-align: center;    
     margin-top: 50px;
     padding: 10px;
     width: 50%;
     cursor: pointer;
-    border-radius: 5px;
-    background-color: #4E3B31;
-    color: #F5F5DC;
-    border: none;
+    border-radius:1px;
+    border: 2px solid black;
+    background-color: #D3C6A0;
+    color: black;
     font-size: 16px;
     text-decoration: none; 
     transition: background-color 0.3s ease, padding 0.3s ease, width 0.3s ease;
 }
 
 .content .button-link:hover {
-    background-color: #7D6A54;
-    padding: 15px;
+    padding: 13px;
     width: 55%;
 }
 
@@ -119,6 +117,7 @@ nav a:hover {
     flex-wrap: wrap;
     overflow: hidden;
     width: 25%;
+    background-color: #F5F5DC; 
     border: 2px solid #D3C6A0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -166,9 +165,9 @@ nav a:hover {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #4E3B31;
-    color: #F5F5DC;
-    border: none;
+    background-color: #F5F5DC; 
+    color:black;
+    border: 2px solid black;
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
@@ -176,7 +175,7 @@ nav a:hover {
 }
 
 .cardButton:hover {
-    background-color: #b0997e;
+    background-color: #f4e8c4;
 }
 .CardContainer h2{
     color:#8b7863;
@@ -207,10 +206,10 @@ nav a:hover {
     width: 70%;
     text-align: center;
     cursor: pointer;
-    border-radius: 8px;
-    color: #F5F5DC; 
-    border: none; 
-    background-color: #4E3B31;
+    border-radius: 4px;
+    color:black;
+    border: 2px solid black;
+    background-color:  #D8C9A3; 
     font-size: 16px; 
     margin-top: 25px;
     text-decoration: none; 
@@ -218,7 +217,7 @@ nav a:hover {
 }
 
 .button-link2:hover {
-    background-color: #9f794e;
+    background-color: #F5F5DC; 
 }
 
 .fatherContainer {
@@ -280,7 +279,7 @@ nav a:hover {
     padding-top:15px;
 }
 .authorInfo button{
-    width:30%;
+    width:100%;
     padding:10px;
     margin-top:50px;
     font-size:15px;
@@ -492,4 +491,259 @@ footer p{
 #YT{
     width:80px;
     height:55px;
+}
+
+@media (max-width: 1200px) {
+    body, .header, .first-Box {
+        width: 100%;
+    }.first-Box img {
+        display: none !important;
+    }   
+    .header {
+        flex-direction: column; 
+        align-items: center; 
+        flex-wrap: wrap;
+        width: 100%; 
+    }
+    nav {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center; 
+        margin-top: 10px; 
+    }
+    nav ul {
+        flex-direction: row;  
+    }
+   .first-Box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: auto;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .content h2 {
+        font-size: 34px;
+        padding-right:50px;
+    }
+
+    .content p {
+        font-size:20px;
+        text-align: center;
+    }
+
+    .button-link {
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        width: 100%;
+    }
+    .CardContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px; 
+    }
+
+    .firstCard, .secondCard, .thirdCard {
+        width: 50%; 
+        height: auto;
+        flex-wrap: wrap;
+        margin-bottom: 20px; 
+    }
+
+    .firstCard img, .secondCard img, .thirdCard img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .cardButton {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+    .CardContainer {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        margin: 20px; 
+        flex-wrap: wrap; 
+    }
+
+    .fatherContainer {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        margin: 20px;
+        height: auto; 
+    }
+
+    .childContainer {
+        width: 100%; 
+        padding-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    #image-slider {
+        width: 80%;
+        padding-left: 0;
+    }
+
+    .Slider {
+        align-items: center; 
+    }
+
+    .cardButton,.childContainer button {
+        width: 60%; 
+    }
+    .authorContainer {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px; 
+    }
+
+    .authorImg img {
+        width: 80%; 
+        margin-left:80px;
+        margin-bottom: 20px; 
+    }
+
+    .authorInfo {
+        width: 100%; 
+        margin-right:0px;
+        margin-bottom: 20px; 
+        align-items: center;
+    }
+
+    .authorInfo button {
+        width: 40%; 
+    }
+
+    .logoContainer {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 50px; 
+        margin-left: 0; 
+        gap: 20px; 
+    }
+
+    .logoChild {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .logo1,.logo2,.logo3,.logo4 {
+        width: 10%; 
+    }
+
+    .topsellers-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 40px;
+    }
+
+    .topsellers-content {
+        width: 35%; 
+    }
+   
+    .topsellers-content img {
+        width: 100%; 
+    }
+
+    .topsellers-box {
+        width: 90%; 
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+    .topsellers-box:hover {
+        width: initial; 
+    }
+    .topsellers-txt {
+        padding: 10px; 
+        margin-bottom: 20px; 
+        text-align: center; 
+        align-items: center;
+    }
+
+    .topsellers-txt h1 {
+        font-size: 40px;
+    }
+
+    .topsellers-txt p {
+        text-align: center; 
+    }
+
+    .viewMore {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px; 
+    }
+
+    .viewMore button {
+        width: 70%; 
+    }
+
+    footer {
+        text-align:center; 
+    }
+    .footer-row {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 30px;
+        margin:10px; 
+    }
+
+    .list, .list2, .list3 {
+        margin-top: 20px; 
+        font-size: medium; 
+    }
+
+    .logo-name img {
+        width: 100%; 
+        margin: 20px 0px; 
+    }
+
+    .logo-name h2 {
+        font-size: large;  
+    }
+
+    .footerimgs {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 15px; 
+        margin-top: 20px; 
+    }
+
+    .footerimgs img {
+        width: 50px; 
+    }
+    #insta{
+        width:80px;
+    }
+    .scrollUp {
+        justify-content: center;
+        padding-right:5px; 
+        margin-top: 20px; 
+    }
+    .scrollUp button {
+        width: 100%; 
+        font-size: 24px; 
+    }
 }
