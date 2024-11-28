@@ -55,4 +55,20 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.removeItem("contactFormData");
         dataDisplay.innerHTML = "";
     });
+
+    let scrollUpBtn = document.getElementById('scrollUpBtn');
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        scrollUpBtn.style.display = 'flex';
+    } else {
+        scrollUpBtn.style.display = 'none';
+    }
+    });
+    
+    scrollUpBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    });
 });

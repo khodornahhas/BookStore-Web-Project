@@ -12,7 +12,6 @@ function changeImage() {
   }, 500); 
 }
 setInterval(changeImage, 2000);
-
 sliderImage.src = images[currentImageIndex];
 
 
