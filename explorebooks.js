@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cartCountElement = document.getElementById("cart-count");
     let cartCount = 0;
+    let cartBooks = [];
 
     const updateCartCount = () => {
         cartCountElement.textContent = cartCount;
@@ -30,10 +31,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const bookItems = document.querySelectorAll(".book-item");
+
     bookItems.forEach(item => {
-        item.addEventListener("click", () => {
-            cartCount++;
-            updateCartCount();
+        const addToCartBtn = item.querySelector(".add-to-cart");
+        const removeFromCartBtn = item.querySelector(".remove-from-cart");
+
+        addToCartBtn.addEventListener("click", () => {
+            const bookImg = item.querySelector("img").src;
+
+            if (!cartBooks.includes(bookImg)) {
+                cartBooks.push(bookImg);
+                cartCount++;
+                updateCartCount();
+            }
+        });
+
+        removeFromCartBtn.addEventListener("click", () => {
+            const bookImg = item.querySelector("img").src;
+
+            if (cartBooks.includes(bookImg)) {
+                cartBooks = cartBooks.filter(book => book !== bookImg);
+                cartCount--;
+                updateCartCount();
+            }
         });
     });
 
