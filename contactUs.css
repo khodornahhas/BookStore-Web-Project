@@ -134,7 +134,7 @@ form input, form textarea {
     font-size: 50px;
     margin: 10px 0;
 }
-#closeModal {
+#success-btn {
     margin-top: 20px;
     padding: 10px 20px;
     background: #F5F5DC;
@@ -142,7 +142,7 @@ form input, form textarea {
     cursor: pointer;
     border-radius: 5px;
 }
-#closeModal:hover {
+#success-btn:hover {
     background: #EEE1C6;
 }
 .contact {
@@ -253,7 +253,26 @@ form input, form textarea {
     cursor: pointer;
     transition: background-color 0.8s ease
 }
+.scrollUp{
+    display: flex;
+    justify-content:end;
+    padding-right:50px;
+    position: fixed;
+    bottom:40px;
+    right:0px;
+}
 
+.scrollUp button {
+    padding: 5px 10px; 
+    font-size: 25px;
+    background-color: #F5F5DC;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.scrollUp button:hover{
+    background-color: #f8e5d0;
+}
 footer{
     background-color: #F1E9D2;
 }
@@ -276,12 +295,10 @@ footer p{
 .list ul, .list2 ul, .list3 ul {
     list-style-type: none; 
 }
-
 .list, .list2, .list3 {
     margin-top: 60px;
     font-size: large;
 }
-
 .list a, .list2 a, .list3 a {
     text-decoration: none;
     color: black;
@@ -301,37 +318,14 @@ footer p{
     font-size: xx-large;
     text-align: center;
 }
-
-.scrollUp{
-    display: flex;
-    justify-content:end;
-    padding-right:50px;
-    position: fixed;
-    bottom:40px;
-    right:0px;
-}
-
-.scrollUp button {
-    padding: 5px 10px; 
-    font-size: 25px;
-    background-color: #F5F5DC;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
-}
-
-.scrollUp button:hover{
-    background-color: #f8e5d0;
-}
-
 .footer-column {
     display: flex;
     flex-direction: column;
     margin: 10px auto;
-    padding-bottom: 30px;    
+    padding-bottom:30px;    
     gap: 15px;
     align-items: center; 
 }
-
 .footerimgs {
     display: flex;        
     justify-content: center; 
@@ -339,10 +333,16 @@ footer p{
     gap: 20px; 
     width: 100%; 
 }
-
 .footerimgs img {
-    height: 60px; 
-    width: auto;  
+    width: 80px;  
+    height: auto;
+}
+#facebook{
+    width:70px;
+}
+#YT{
+    width:80px;
+    height:55px;
 }
   .burger-icon {
     display: none;

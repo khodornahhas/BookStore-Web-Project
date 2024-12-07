@@ -16,14 +16,6 @@ sliderImage.src = images[currentImageIndex];
 
 
 let scrollUpBtn = document.getElementById('scrollUp=btn');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    scrollUpBtn.style.display = 'flex';
-  } else {
-    scrollUpBtn.style.display = 'none';
-  }
-});
-
 scrollUpBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
