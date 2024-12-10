@@ -9,9 +9,9 @@ function changeImage() {
     currentImageIndex = (currentImageIndex + 1) % images.length;
     sliderImage.src = images[currentImageIndex];
     sliderImage.style.opacity = 1;
-  }, 500); 
+  }, 800); 
 }
-setInterval(changeImage, 2000);
+setInterval(changeImage, 4800);
 sliderImage.src = images[currentImageIndex];
 
 

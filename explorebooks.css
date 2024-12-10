@@ -12,53 +12,60 @@ body {
     height: auto;
 }
 
+header img{
+    height:80px;
+    width:90px;
+}
+
 header {
-    background-color: #4E3B31;
-    color: #FFF;
-    width: 100%;
+    background-color: #4E3B31; 
+    color: #FFF; 
+    max-width: 100%;
+}
+body {
+    background-color: #F5F5DC; 
+    color: #333333; 
+    height:auto;
+    max-width: 100%;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
+    justify-content:space-between;
+    align-items: center; 
+    padding:5px;
+    gap:15px; 
 }
 
-header img {
-    height: 120px;
-    width: 130px;
-    margin-right: 10px;
-}
-
-#bookly-H1 {
-    font-size: 2.5em;
-    color: #FFF;
+.header img {
+    margin-right: 10px; 
 }
 
 nav {
-    margin-left: auto;
+    margin-left: auto; 
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
+    display: flex; 
+    list-style-type: none; 
+    gap:2px;
 }
 
 nav li {
-    margin: 5px;
+    margin:5px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #FFF;
+    text-decoration: none; 
+    color: #FFF; 
     font-size: larger;
-    transition: color 0.3s ease, font-size 0.3s ease;
+    transition: color 0.3s ease,font-size 0.3s ease;
 }
 
 nav a:hover {
-    color: #f5f5dc72;
-    font-size: 21px;
+    color:#f5f5dc72;
+    font-size:21px;
+
 }
 
 .cart {
@@ -223,35 +230,32 @@ main {
     max-height: none;
 }
 
-footer {
+footer{
     background-color: #F1E9D2;
 }
-
-footer p {
-    padding-bottom: 15px;
+footer p{
+    padding-bottom:5px;
     color: #7D6A54;
     font-size: larger;
 }
 
 .footer-row {
     display: flex;
-    gap: 300px;
+    gap:200px;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: auto;
-    margin-top: 100px;
-    margin-right: 60px;
+    height:auto;
+    margin-top:50px;
+    margin-left:100px;
 }
 
 .list ul, .list2 ul, .list3 ul {
-    list-style-type: none;
+    list-style-type: none; 
 }
-
 .list, .list2, .list3 {
     margin-top: 60px;
     font-size: large;
 }
-
 .list a, .list2 a, .list3 a {
     text-decoration: none;
     color: black;
@@ -260,49 +264,43 @@ footer p {
 .logo-name img {
     width: 70%;
     height: 15vh;
-    margin-top: 30px;
+    margin-top:30px;
     margin-left: 30px;
-    display: block;
+    display: block; 
 }
 
 .logo-name h2 {
-    padding-left: 5px;
-    padding-top: 10px;
+    padding-left:10px;
+    padding-top:0px;
     font-size: xx-large;
     text-align: center;
 }
-
 .footer-column {
     display: flex;
     flex-direction: column;
     margin: 10px auto;
-    padding-bottom: 30px;
-    gap: 15px;
-    align-items: center;
+    padding-bottom:0px;    
+    gap:0px;
+    align-items: center; 
 }
-
 .footerimgs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+    display: flex;        
+    justify-content: center; 
+    align-items: center;    
+    gap: 10px; 
+    width: 100%; 
 }
-
 .footerimgs img {
-    width: 80px;
+    width: 80px;  
     height: auto;
 }
-
-#facebook {
-    width: 70px;
+#facebook{
+    width:70px;
 }
-
-#YT {
-    width: 80px;
-    height: 55px;
+#YT{
+    width:80px;
+    height:55px;
 }
-
 .scrollUp {
     display: flex;
     justify-content: end;
