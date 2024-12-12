@@ -130,11 +130,11 @@ main {
 .content {
     flex: 1;
     background-color: #fff8e7;
-    padding: 1.5em;
+    padding: 0em 1.5em;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
+    margin-top: 15px;
+} 
 
 .content h1 {
     color: #3e2a1c;
